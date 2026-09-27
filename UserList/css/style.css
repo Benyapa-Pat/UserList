@@ -1,0 +1,10 @@
+.user-menu {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .user-menu {
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+}
