@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <title>User List</title>
   </head>
 
   <body>
 
+    <!-- Header -->
     <header class="mb-5">
       <div class="container mt-5">
         <div class="d-flex justify-content-end">
           <div class="btn-group">
+
             <button
               type="button"
               class="btn btn-secondary btn-sm"
@@ -32,16 +36,21 @@
             >
               Light
             </button>
+
           </div>
         </div>
       </div>
     </header>
 
+    <!-- Main -->
     <main>
       <div class="container">
+
         <h1 class="mb-4">Users</h1>
 
+        <!-- Search and Navigation -->
         <div class="row">
+
           <div class="col-md-4">
             <input
               type="text"
@@ -52,22 +61,197 @@
 
           <div class="col-md-8">
             <div class="user-menu d-flex justify-content-end align-items-center">
+
               <a href="#" class="me-3">Reputation</a>
+
               <a
                 href="#"
                 class="text-bg-primary rounded-3 px-2 py-1 me-3"
               >
                 New Users
               </a>
+
               <a href="#" class="me-3">Editors</a>
+
               <a href="#">Moderators</a>
+
             </div>
           </div>
+
         </div>
+
+        <!-- User Cards -->
+        <div class="row mt-4">
+
+          <!-- John Doe -->
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body d-flex gap-3">
+
+                <img
+                  src="https://randomuser.me/api/portraits/men/75.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="John Doe"
+                  width="80"
+                  height="80"
+                />
+
+                <div>
+                  <h5 class="card-title">John Doe</h5>
+
+                  <p class="card-text">Troy, MI</p>
+
+                  <p class="card-text">
+                    <a
+                      href="#"
+                      data-bs-toggle="popover"
+                      data-bs-content="john@gmail.com"
+                    >
+                      john@gmail.com
+                    </a>
+                  </p>
+
+                  <span class="badge text-bg-secondary">Nature</span>
+                  <span class="badge text-bg-secondary">Travel</span>
+                  <span class="badge text-bg-secondary">Sport</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Lehla Nichols -->
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body d-flex gap-3">
+
+                <img
+                  src="https://randomuser.me/api/portraits/women/75.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Lehla Nichols"
+                  width="80"
+                  height="80"
+                />
+
+                <div>
+                  <h5 class="card-title">Lehla Nichols</h5>
+
+                  <p class="card-text">Fort Worth, TX</p>
+
+                  <p class="card-text">
+                    <a
+                      href="#"
+                      data-bs-toggle="popover"
+                      data-bs-content="lehla@gmail.com"
+                    >
+                      lehla@gmail.com
+                    </a>
+                  </p>
+
+                  <span class="badge text-bg-secondary">Fashion</span>
+                  <span class="badge text-bg-secondary">STEM</span>
+                  <span class="badge text-bg-secondary">Architecture</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Annie Rice -->
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body d-flex gap-3">
+
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Annie Rice"
+                  width="80"
+                  height="80"
+                />
+
+                <div>
+                  <h5 class="card-title">Annie Rice</h5>
+
+                  <p class="card-text">Troy, MI</p>
+
+                  <p class="card-text">
+                    <a
+                      href="#"
+                      data-bs-toggle="popover"
+                      data-bs-content="annie@gmail.com"
+                    >
+                      annie@gmail.com
+                    </a>
+                  </p>
+
+                  <span class="badge text-bg-secondary">Electronics</span>
+                  <span class="badge text-bg-secondary">Tech</span>
+                  <span class="badge text-bg-secondary">Music</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Alex Smith -->
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body d-flex gap-3">
+
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Alex Smith"
+                  width="80"
+                  height="80"
+                />
+
+                <div>
+                  <h5 class="card-title">Alex Smith</h5>
+
+                  <p class="card-text">Bangkok, Thailand</p>
+
+                  <p class="card-text">
+                    <a
+                      href="#"
+                      data-bs-toggle="popover"
+                      data-bs-content="alex@gmail.com"
+                    >
+                      alex@gmail.com
+                    </a>
+                  </p>
+
+                  <span class="badge text-bg-secondary">Coding</span>
+                  <span class="badge text-bg-secondary">Music</span>
+                  <span class="badge text-bg-secondary">Travel</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </main>
 
+    <!-- JavaScript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/darkmodetoggle.js"></script>
+
+    <!-- Enable Popovers -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const popoverTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="popover"]'
+        );
+
+        popoverTriggerList.forEach(function (popoverTriggerEl) {
+          new bootstrap.Popover(popoverTriggerEl);
+        });
+      });
+    </script>
+
   </body>
 </html>
